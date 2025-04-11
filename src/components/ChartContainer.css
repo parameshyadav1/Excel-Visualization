@@ -1,0 +1,61 @@
+.chart-tooltip {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    color: white !important;
+    border: none !important;
+  }
+  
+  .chart-tooltip .label {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .chart-tooltip .value {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chart-tooltip .color-box {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 3px;
+  }
+  
+  /* Animation for charts */
+  canvas {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Custom chart legend */
+  .chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+  }
+  
+  .legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .legend-text {
+    font-size: 14px;
+    color: #666;
+  }

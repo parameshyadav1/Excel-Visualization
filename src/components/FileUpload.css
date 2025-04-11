@@ -1,0 +1,46 @@
+.upload-area {
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-container {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 2px dashed #e0e0e0;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-container:hover {
+    border-color: #4895ef;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(67, 97, 238, 0.1);
+  }
+  
+  .upload-title {
+    color: #4361ee;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .upload-subtitle {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+  }
+  
+  .upload-success {
+    animation: pulse 1.5s ease;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+  
+  .drag-active {
+    border-color: #4895ef;
+    background-color: rgba(72, 149, 239, 0.05);
+  }
